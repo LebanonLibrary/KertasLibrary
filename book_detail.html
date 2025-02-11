@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ book.name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="book-detail">
+        <h1>{{ book.name }}</h1>
+        <p><strong>Price:</strong> {{ book.price }}</p>
+
+        <form method="POST">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" min="1" value="1" required>
+            <button type="submit" class="button">Add to Cart</button>
+        </form>
+
+        <a href="{{ url_for('cart') }}" class="button">Go to Cart</a>
+    </div>
+
+    <!-- Optional: You can add a back button to go back to the book list -->
+    <a href="{{ url_for('english_books') }}" class="button">Back to English Books</a>
+    <a href="{{ url_for('arabic_books') }}" class="button">Back to Arabic Books</a>
+</body>
+</html>

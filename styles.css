@@ -1,0 +1,163 @@
+/* General page styles */
+body {
+    font-family: Arial, serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #333;  /* Dark grey background for the entire page */
+    color: #fff; /* White text for all content */
+    margin: 0;
+    padding: 0;
+}
+
+/* Welcome Container */
+.welcome-container {
+    text-align: center;
+    padding: 50px;
+    background-color: #444; /* Slightly lighter dark grey for the welcome section */
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dcb5d0; /* Light pink background */
+    color: #333; /* Dark grey text inside the button */
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #b99abf; /* Darker pink on hover */
+}
+
+/* Book Section */
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.book {
+    background-color: #444; /* Dark grey background for each book item */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    color: #fff; /* White text for book details */
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Header and other text outside boxes */
+h1, h3 {
+    color: #dcb5d0; /* Light pink color for titles */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input[type="number"], input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    color: #333; /* Dark grey text in input boxes */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="number"] {
+    width: 100px;
+}
+
+/* Unordered list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Cart page and checkout buttons */
+.cart, .checkout {
+    background-color: #444; /* Dark grey background for cart and checkout */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #fff; /* White text for cart and checkout */
+}
+
+.cart-item, .checkout-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img, .checkout-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.checkout-btn {
+    background-color: #dcb5d0;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.checkout-btn:hover {
+    background-color: #b99abf;
+}
+
+/* Clear All button styles */
+.clear-button {
+    background-color: #f44336;  /* Red color for the "Clear All" button */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.clear-button:hover {
+    background-color: #e53935;  /* Darker red on hover */
+}
+
+/* Aligning the "Clear All" and "Proceed to Checkout" buttons next to each other */
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;  /* Adds spacing between the buttons */
+    margin-top: 20px;
+}
+
+/* Thank you page */
+.thank-you {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+    color: #dcb5d0; /* Pink text for thank you message */
+}

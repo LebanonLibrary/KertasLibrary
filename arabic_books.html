@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Books</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Arabic Books</h1>
+    <div class="books">
+        {% for book in books %}
+            <div class="book">
+                <img src="{{ url_for('static', filename=book.image) }}" alt="{{ book.name }}">
+                <h3>{{ book.name }}</h3>
+                <p>{{ book.price }}</p>
+                <a href="{{ url_for('book_detail', book_id=book.id) }}" class="button">View Details</a>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
